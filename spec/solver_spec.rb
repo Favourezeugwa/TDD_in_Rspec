@@ -18,4 +18,11 @@ describe Solver do
       expect(solver.factorial(-1)).to eql('No Negative Integers')
     end
   end
+
+  describe '#reverse' do
+    it 'returns the reverse of a string' do
+      expect(solver.reverse('hello')).to eql('olleh')
+      expect(solver.reverse('favour')).to_not eql('favour')
+    end
+  end
 end
