@@ -26,12 +26,12 @@ describe Solver do
     end
   end
 
-  describe '#fibonacci' do
+  describe '#fizzbuzz' do
     it 'returns fizz, buzz and fizzbuzz when numbers are divisible by 3, 5 and 3 & 5' do
-      expect(solver.fibonacci(9)).to eql('fizz')
-      expect(solver.fibonacci(20)).to eql('buzz')
-      expect(solver.fibonacci(15)).to eql('fizzbuzz')
-      expect(solver.finonacci(7)).to eql('7')
+      expect(solver.fizzbuzz(9)).to eql('fizz')
+      expect(solver.fizzbuzz(20)).to eql('buzz')
+      expect(solver.fizzbuzz(15)).to eql('fizzbuzz')
+      expect(solver.fizzbuzz(7)).to eql('7')
     end
   end
 end
