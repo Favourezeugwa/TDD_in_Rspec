@@ -25,4 +25,13 @@ describe Solver do
       expect(solver.reverse('favour')).to_not eql('favour')
     end
   end
+
+  describe '#fibonacci' do
+    it 'returns fizz, buzz and fizzbuzz when numbers are divisible by 3, 5 and 3 & 5' do
+      expect(solver.fibonacci(9)).to eql('fizz')
+      expect(solver.fibonacci(20)).to eql('buzz')
+      expect(solver.fibonacci(15)).to eql('fizzbuzz')
+      expect(solver.finonacci(7)).to eql('7')
+    end
+  end
 end
